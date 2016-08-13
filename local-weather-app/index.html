@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Local Weather App</title>
+    
+    
+    
+  <!-- <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'> -->
+
+        <link rel="stylesheet" href="https://delvin-tolkadot.c9users.io/FCC/local-weather-app/css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- 
+
+NOTES
+--study
+ http://webdesign.tutsplus.com/articles/making-websites-location-aware-with-html5-geolocation--webdesign-10495 & https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
+to teach me how to use the Geolocation.getCurrentPosition() function.
+--wrote a simple javascript that gets the longtitude & latitude coords of my browser.
+-- study
+http://openweathermap.org/current
+=== to work put how to get send the coordinates and get the weather back
+api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}
+-- study 
+https://www.codecademy.com/courses/javascript-beginner-en-EID4t/2/4
+=== to understand API's
+-- READ 
+http://www.smashingmagazine.com/2012/02/beginners-guide-jquery-based-json-api-clients/
+http://www.w3schools.com/json/json_http.asp
+=== to get a grip on JSON
+-->
+
+
+  
+  
+
+
+<div class="new">
+<div id="foo" class="container-fluid" >  
+  <div id="day"></div>
+  <div id="icon"> LOADING  . . . </div>
+  
+  
+ 
+  <div id="stats"> 
+   
+    <div id="tempArea" class="floatLeft">
+       
+      <button id ="cfToggle"> <div id ="temperature"> </div> </button> 
+   </div>
+   
+    <div id ="windHumidity" class="floatLeft">
+      <div id="windSpeed"> Wind Speed</div>
+      <div id="humidity">Humidity</div>
+   </div>
+    
+  </div>
+  
+  
+  <h1 id="myLocation"></h1>
+  
+  </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://delvin-tolkadot.c9users.io/FCC/local-weather-app/js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

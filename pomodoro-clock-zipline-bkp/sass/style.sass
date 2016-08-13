@@ -1,0 +1,92 @@
+@import "compass/css3/flexbox"
+@import "compass/css3"
+@import url(https://fonts.googleapis.com/css?family=Roboto:300)
+
+//Variables
+$main-font-size: 20px
+$main-font: 'Roboto'
+$main-color: #E87281
+
+//Mixins
+
+=linearGradient($top, $bottom)
+  background: $top 
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%) 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom))
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%)
+
+=makeFlex
+  @include display_flex
+  align-items: center
+  justify-content: center
+  
+=hoverer
+  &:hover
+    color: pink
+  
+html
+  font-size: $main-font-size
+  font-family: $main-font
+  height: 100%
+  
+body
+  margin: 0 
+  height: 100%
+  +linearGradient($main-color, #FFBD00)
+    
+a
+  text-decoration: none
+  color: black
+  text-transform: lowercase
+  +hoverer
+footer
+  font-size: 30%
+  
+#displayID, #workClockID, #pomodoro
+  +makeFlex
+  flex-direction: column
+ 
+#controls, #work, #break, #container
+  width: 100%
+
+#pomodoro
+  height: 100%
+  width: 100%
+  //padding-top: 1%
+  
+#title
+  font-size: 500%
+ 
+#controls
+  +makeFlex
+    
+#work, #break
+  text-align: center
+  margin: 1% auto
+  //padding: 1% 0
+    
+#controlStart
+  width: 50%
+  text-align: right
+  margin-right: 10%
+  
+  
+#controlStop
+  width: 50%
+  text-align: left
+  
+#workClockID
+  font-size: 600%
+  
+
+.button
+  border-radius: 50%
+  background: white
+  border: 1px solid black
+  padding: 1.4%
+  
+.period
+  padding-bottom: 1%
+  
+#displayID
+  font-size: 130% 

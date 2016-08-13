@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #61a0bd;
+  background: -moz-linear-gradient(top, #61a0bd 0%, #dbf0f0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #61a0bd), color-stop(100%, #dbf0f0));
+  background: -webkit-linear-gradient(top, #61a0bd 0%, #dbf0f0 100%);
+  /*text-align: center */
+  font-size: 36px;
+  font-family: "Megrim", cursive;
+}
+
+#container {
+  height: 400px;
+  width: 315px;
+  position: relative;
+  margin: auto;
+  top: 20%;
+}
+@media screen and (max-width: 450px) {
+  #container {
+    top: 5px;
+  }
+}
+
+#display {
+  width: 296px;
+  height: 40px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 10px;
+}
+
+button {
+  width: 72.5px;
+  height: 40px;
+  font-size: 30px;
+  margin: 2px;
+  border: 1px solid #4587a6;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background-color: white;
+  vertical-align: middle;
+  line-height: 40px -40;
+  box-shadow: 2px 2px #366a82;
+  font-family: "Megrim", cursive;
+}
+button:hover {
+  background: #dfecf2;
+}
+
+.bigButton {
+  width: 148px;
+  height: 40px;
+}
+
+#heading {
+  font-size: 60px;
+}
+
+@media screen and (min-width: 450px) {
+  footer {
+    font-size: 10px;
+    font-family: arial;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer {
+    font-size: 0px;
+  }
+}

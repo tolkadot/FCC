@@ -1,0 +1,94 @@
+
+$width:280px
+$height: 40px
+$main-color: #61a0bd
+$button-margin: 2px
+$font: 'Megrim', cursive
+$breakpoint: 450px
+
+
+@import "compass"
+@import url(https://fonts.googleapis.com/css?family=Megrim)
+
+=linearGradient($top, $bottom)
+  background: $top 
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%) 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom))
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%)
+  
+=roundedCorners($size)
+  -webkit-border-radius: $size + px
+  -moz-border-radius: $size + px
+  border-radius: $size + px
+
+html
+  height: 100%
+  
+body
+  //background-repeat: no-repeat
+  //background-attachment: fixed
+  height: 100%
+  width: 100%
+  margin: 0
+  +linearGradient($main-color, hsl(180, 41%, 90%))
+  /*text-align: center*/
+  font-size: 36px
+  font-family: $font
+  
+ 
+
+#container
+  height: $height * 10
+  width: $width + 35px
+  position: relative
+  margin: auto
+  top: 20%
+  @media screen and (max-width: $breakpoint)
+    top: 5px
+  
+
+#display   
+  width: $width + $button-margin*8
+  height: $height
+  text-align: right
+  margin-left: auto 
+  margin-right: auto 
+  letter-spacing: 10px
+  
+    
+ 
+button 
+  width: ($width+10)/4
+  height: $height
+  //color: darken($main-color, 50%)
+  &:hover
+    background: scale-lightness($main-color, 80%)
+  font-size: 30px
+  margin: $button-margin
+  border: 1px solid darken($main-color, 10%)
+  +roundedCorners(50)
+  background-color: white
+  vertical-align: middle
+  line-height: ($height -40)
+  box-shadow: 2px 2px darken($main-color, 20%)
+  font-family: $font
+  
+ 
+
+.bigButton
+  width: ($width/2) + ($button-margin*4)
+  height: $height
+  
+
+#heading
+  font-size: 60px
+
+footer
+  @media screen and (min-width: $breakpoint)
+    font-size: 10px
+    font-family: arial
+    position: absolute
+    bottom: 0px
+    right: 10px
+  @media screen and (max-width: $breakpoint)
+    font-size: 0px

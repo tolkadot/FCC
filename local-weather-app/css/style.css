@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/* line 31, ../sass/style.sass */
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100VH;
+  width: 100%;
+  font-family: "Poiret One";
+}
+
+/* line 39, ../sass/style.sass */
+.new {
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 47, ../sass/style.sass */
+.container-fluid {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 30%;
+  height: 90%;
+  color: black;
+  background: #CCCCCC;
+}
+
+/* line 54, ../sass/style.sass */
+.hot {
+  background-color: #D53F1A;
+}
+
+/* line 57, ../sass/style.sass */
+.warm {
+  background-color: #FFC600;
+}
+
+/* line 60, ../sass/style.sass */
+.cold {
+  background-color: #52AEC7;
+}
+
+/* line 67, ../sass/style.sass */
+#myLocation {
+  align-self: flex-start;
+}
+
+/* line 70, ../sass/style.sass */
+#cfToggle {
+  font-family: "Poiret One";
+  background: none;
+  border: none;
+  font-size: 500%;
+}
+/* line 75, ../sass/style.sass */
+#cfToggle:hover {
+  color: orange;
+}
+
+/* line 78, ../sass/style.sass */
+#stats {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  width: 80%;
+}
+
+/* line 84, ../sass/style.sass */
+#day {
+  width: 100%;
+  text-align: center;
+  font-size: 300%;
+}
+
+/* line 89, ../sass/style.sass */
+#icon, #iconArea {
+  width: 100%;
+  text-decoration: underline;
+}
+
+/* line 95, ../sass/style.sass */
+#windHumidity, #tempArea {
+  width: 50%;
+  align-content: center;
+}
+
+/* line 99, ../sass/style.sass */
+#windSpeed, #humidity {
+  text-align: center;
+}

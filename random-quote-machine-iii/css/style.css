@@ -1,0 +1,38 @@
+body {
+  background-image: url(https://image.freepik.com/free-photo/blurry-blurred-blur-background-backdrop-abstract_121-17167.jpg);
+  min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+  margin: 0 auto; 
+}
+.words {
+ font-family: 'Pacifico', cursive;
+  font-size: 150px;
+  padding: 30px;
+}
+.btn-primary {
+  font-family: 'Hind', sans-serif;
+ 
+}
+
+#theQuote {
+  font-size: 20px;
+  border: 5px solid;
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+#tweet {
+  color: white;
+  text-decoration:none;
+}
+btn-primary {
+  background-color: gray;
+}
+
+.container{
+text-align: center;
+}
