@@ -129,6 +129,7 @@ function getWeather(lat, lon){
   
 function tempSettings(){
     console.log("got to tempSettings")
+    document.getElementById("loading").style.display = "none";
     if(tempCelsius < 10)
       {
       $("#foo").addClass("cold");
@@ -148,11 +149,12 @@ function tempSettings(){
       $("#humidity").text(humidity);
     //   var iconarea = document.getElementById("icon");
     //   console.log(iconarea)
-      var url = "https://delvin-tolkadot.c9users.io/FCC/WeatherIcons/" +iconID + ".png";
-      console.log(url);
-      document.getElementById("icon").style.backgroundImage = "url('https://delvin-tolkadot.c9users.io/FCC/WeatherIcons/partly-cloudy-day.png') no-repeat center";
-   
-      
+       var url = "url(WeatherIcons/" +iconID + ".png)";
+    //   console.log(url);
+    document.getElementById("icon").style.backgroundImage = url;
+    document.getElementById("icon").style.backgroundRepeat = "no-repeat";
+    document.getElementById("icon").style.backgroundPosition = "center";
+    
       toggleTemp();
 }
 function toggleTemp() {

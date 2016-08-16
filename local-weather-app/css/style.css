@@ -31,26 +31,23 @@ body {
   height: 90%;
   color: black;
   background: #CCCCCC;
+  margin-top: 2%;
+  padding-top: 2%;
 }
 
-/* line 54, ../sass/style.sass */
+/* line 56, ../sass/style.sass */
 .hot {
   background-color: #D53F1A;
 }
 
-/* line 57, ../sass/style.sass */
+/* line 59, ../sass/style.sass */
 .warm {
   background-color: #FFC600;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 .cold {
   background-color: #52AEC7;
-}
-
-/* line 67, ../sass/style.sass */
-#myLocation {
-  align-self: flex-start;
 }
 
 /* line 70, ../sass/style.sass */
@@ -74,18 +71,20 @@ body {
   flex-direction: column;
   flex-direction: row;
   width: 80%;
+  padding: 3%;
+  border-bottom: 1px solid;
 }
 
-/* line 84, ../sass/style.sass */
-#day {
-  width: 100%;
+/* line 86, ../sass/style.sass */
+#day, #myLocation {
   text-align: center;
   font-size: 300%;
 }
 
-/* line 89, ../sass/style.sass */
+/* line 90, ../sass/style.sass */
 #icon, #iconArea {
   width: 100%;
+  height: 50%;
   text-decoration: underline;
 }
 
@@ -96,6 +95,21 @@ body {
 }
 
 /* line 99, ../sass/style.sass */
-#windSpeed, #humidity {
+#windSpeed, #humidity, .center {
   text-align: center;
+  padding: 1%;
+}
+
+/* line 103, ../sass/style.sass */
+#myLocation {
+  align-self: flex-end;
+  padding: 6% 0%;
+  width: 100%;
+}
+
+/* line 108, ../sass/style.sass */
+#day {
+  border-bottom: 1px solid;
+  padding-bottom: 2%;
+  width: 80%;
 }
