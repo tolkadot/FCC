@@ -1,0 +1,87 @@
+<!-- http://g-liu.com/blog/2013/08/tutorial-basic-carouselslideshow-with-javascript/ -->
+
+<html>
+<head> 
+
+
+<style>#testimonials {
+  height: 300px;
+  width: 100%;
+  //background: #EEEEEE;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#testimonials #testimonialsImage {
+  width: 25%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#testimonials #testimonialsText {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  font-family: "Roboto";
+  font-size: 130%;
+}
+
+.hide {
+  display: none;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.rounded {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+  
+#firstElement {
+ display: block;
+
+}
+
+</style>
+
+</head>
+<body>
+<section id="testimonials">
+    <div id = "slideshow">
+     <ul>
+      <li id="firstElement" class="hide">
+    <div class ="testimonialsImage floatLeft "> <img class="rounded" src="https://delvin-tolkadot.c9users.io/wp-content/uploads/JaneCarson200x200.jpg"></div>
+    <div class = "testimonialsText floatLeft "> "I cannot speak highly enough of Dee.  
+    Since first contact she evidenced enthusiasm and most importantly know how in 
+    developing my website.  There were a number of options available in terms of providers 
+    and site building platforms.  Dee took me through each option with clarity and outlined pros and cons of each.  
+    She spent time on developing the look and feel of the site and was both proactive and innovative.  I love the end deliverable, 
+    functionality and would heartily recommend her services.  As a new business it is great to have someone on your side to deliver such a good service.  
+    Many thanks Dee."  <br/>-  Jane Carson @ janecarsonart.com</div>
+    </div></li>
+    
+    <li class="hide">
+    <div class ="testimonialsImage floatLeft "> <img class="rounded" src="https://delvin-tolkadot.c9users.io/wp-content/uploads/dee.jpg"></div>
+    <div class = "testimonialsText floatLeft "> "Lorem ipsum dolor sit amet, consectetur 
+    adipiscing elit. Vivamus quis fringilla nisl. Maecenas a aliquam ex, et vestibulum nisl. 
+    Mauris efficitur tristique neque, vitae rutrum ipsum pulvinar ac. Duis dapibus lorem ultricies 
+    risus finibus, ac laoreet arcu dapibus. Curabitur faucibus sit amet arcu quis luctus. " 
+    <br/>-  Jane Carson @ janecarsonart.com</div>
+    </div></li>
+    
+    
+    
+    
+</ul></div>
+</section>
+
+<script type="text/javascript" src="carousel.js"></script>
+</body>
+</html>
